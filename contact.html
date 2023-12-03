@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frosty Haven Retreat - Contact Us</title>
+    <meta name="author" content="Rachell Pena">
+    <meta name="description"
+        content="Learn more about the new experience at the new winter resort Frosty Haven Retreat">
+    <link rel="icon" href="content/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Frosty Haven Retreat</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hero-image" img src="content/swiss-valley.jpg">
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- CHOICE OF LAYOUT 1 -->
+        <section id="contact-layout-1">
+            <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation
+                with us! Required fields marked with a *</p>
+            <img src=".\content/swiss-peak.jpg" alt="Swiss Peak">
+            </section>
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="post">
+                <label for="full-name">Full Name *</label>
+                <input type="text" id="my-full-name" name="my-full-name" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="my-email" name="my-email" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="my-phone" name="my-phone" required>
+
+                <fieldset>
+                    <legend>Preferred Method of Contact</legend>
+
+                    <input type="radio" name="contact-pref" id="pref-email" checked>
+                    <label for="pref-email">Email</label>
+
+                    <input type="radio" name="contact-pref" id="pref-phone">
+                    <label for="pref-phone">Phone</label>
+                </fieldset>
+
+
+                <label for="">Comments</label>
+                <textarea name="my-comments" id="my-comments"></textarea>
+
+                <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy;2023 - Frosty Haven Retreat</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+
+</html>
